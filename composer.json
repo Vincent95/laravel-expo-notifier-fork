@@ -1,73 +1,22 @@
 {
-  "name": "vincent95/laravel-expo-notifier",
-  "description": "Easily send Expo notifications with Laravel.",
-  "type": "plugin",
-  "keywords": [
-    "yieldstudio",
-    "laravel",
-    "notifier",
-    "notification",
-    "expo"
-  ],
-  "homepage": "https://github.com/Vincent95/laravel-expo-notifier",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "James Hemery",
-      "email": "james@yieldstudio.fr",
-      "homepage": "https://yieldstudio.fr",
-      "role": "Developer"
+    "name": "segueinteractive/laravel-expo-notifier",
+    "description": "expo notifier",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Segueinteractive\\LaravelExpoNotifier\\": "src/"
+        }
     },
-    {
-      "name": "David Tang",
-      "email": "david@yieldstudio.fr",
-      "homepage": "https://yieldstudio.fr",
-      "role": "Developer"
+    "authors": [
+        {
+            "name": "Imran Mungai",
+            "email": "munga19ihub@gmail.com"
+        }
+    ],
+    "require": {},
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     }
-  ],
-  "require": {
-    "php": "^8.0",
-    "illuminate/database": "^9|^10",
-    "illuminate/support": "^9|^10"
-  },
-  "require-dev": {
-    "ciareis/bypass": "^1.0",
-    "dg/bypass-finals": "^1.4",
-    "laravel/pint": "^1.3",
-    "orchestra/testbench": "7.*|8.*",
-    "pestphp/pest": "^1.21",
-    "phpunit/phpunit": "^9.1"
-  },
-  "autoload": {
-    "psr-4": {
-      "Vincent95\\LaravelExpoNotifier\\": "src"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Vincent95\\LaravelExpoNotifier\\Tests\\": "tests"
-    }
-  },
-  "scripts": {
-    "format": "pint",
-    "test": "vendor/bin/pest",
-    "post-autoload-dump": [
-      "@php ./vendor/bin/testbench package:discover --ansi"
-    ]
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Vincent95\\LaravelExpoNotifier\\ExpoNotificationsServiceProvider"
-      ]
-    }
-  },
-  "config": {
-    "sort-packages": true,
-    "allow-plugins": {
-      "pestphp/pest-plugin": true
-    }
-  },
-  "minimum-stability": "stable",
-  "prefer-stable": true
 }
